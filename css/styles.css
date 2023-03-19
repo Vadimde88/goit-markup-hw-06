@@ -684,6 +684,10 @@ header > div {
 	box-sizing: border-box;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
+
+	transition-property: color, border, filter;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-input:focus {
@@ -730,6 +734,7 @@ header > div {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	padding: 72px 24px 24px;
 
 	width: 408px;
 	height: 584px;
@@ -744,9 +749,8 @@ header > div {
 
 .modal-button {
 	position: absolute;
-	right: 0;
-	margin-top: 8px;
-	margin-right: 8px;
+	right: 24px;
+	top: 24px;
 	padding: 2px;
 
 	font-size: 14px;
@@ -779,10 +783,6 @@ header > div {
 	text-align: center;
 }
 
-.modal-form-container {
-	padding: 40px;
-}
-
 .form-field label {
 	margin-bottom: 4px;
 	font-size: 12px;
@@ -792,7 +792,7 @@ header > div {
 }
 
 .form-field {
-	margin-bottom: 8px;
+	margin-bottom: 16px;
 }
 
 .form-field input {
@@ -804,6 +804,10 @@ header > div {
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	box-sizing: border-box;
 	border-radius: 4px;
+
+	transition-property: color, border-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 textarea {
@@ -817,6 +821,10 @@ textarea {
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	box-sizing: border-box;
 	border-radius: 4px;
+
+	transition-property: color, border-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 textarea::placeholder {
@@ -877,6 +885,10 @@ textarea::placeholder {
 	position: absolute;
 	top: 50%;
 	left: 12px;
+
+	transition-property: color, fill;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon {
